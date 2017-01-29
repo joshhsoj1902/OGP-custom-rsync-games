@@ -19,8 +19,8 @@ RUN apt-get update \
                         e2fsprogs \
                         libhttp-daemon-perl \
                         libarchive-any-perl \
-                        libio-compress-perl \
-                        libfrontier-rpc-perl
+                        default-jre \
+                        git
 
 COPY rsync /root/rsync
 
