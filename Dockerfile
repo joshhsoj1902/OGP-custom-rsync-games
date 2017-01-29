@@ -29,4 +29,3 @@ VOLUME ["games:/srv/games/"]
 WORKDIR /root/rsync
 
 CMD ["perl", "RunUpdate.pl", "update", "all"]
-CMD ["tail", "-f", "RunUpdate.pl"]
