@@ -12,4 +12,4 @@ jobs:
       - run:
           name: ""
           command: |
-            sh update_games.sh update all
+            ./update_games.sh update all
