@@ -3,6 +3,4 @@ build:
 start:
 	docker run joshhsoj1902/ogp-custom-rsync-games:latest
 
-
-.
-PHONY: build
+.PHONY: build
