@@ -10,6 +10,6 @@ jobs:
           command: |
             make build
       - run:
-          name: ""
+          name: "Test update"
           command: |
-            make start
+            make update-all
