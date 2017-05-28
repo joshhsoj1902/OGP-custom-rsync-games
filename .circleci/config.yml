@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/ogp
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: "Build Image"
+          command: |
+            make build
+      - run:
+          name: "Test update openttd"
+          background: true
+          command: |
+            make update-openttd
+      - run:
+          name: "Test update terraria"
+          background: true
+          command: |
+            make update-terraria
+      - run:
+          name: "Test update minecraft"
+          command: |
+            make update-minecraft
