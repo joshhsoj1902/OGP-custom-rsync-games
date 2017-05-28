@@ -10,6 +10,17 @@ jobs:
           command: |
             make build
       - run:
-          name: "Test update"
+          name: "Test update minecraft"
+          background: true
           command: |
-            make update-all
+            make update-minecraft
+      - run:
+          name: "Test update openttd"
+          background: true
+          command: |
+            make update-openttd
+      - run:
+          name: "Test update terraria"
+          background: true
+          command: |
+            make update-terraria
